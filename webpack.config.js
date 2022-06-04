@@ -2,7 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
 const deps = require("./package.json").dependencies;
-const ASSET_PATH = process.env.ASSET_PATH || 'http://localhost:3030/';
+const ASSET_PATH = process.env.ASSET_PATH || 'http://localhost:4040/';
 
 module.exports = {
   output: {
