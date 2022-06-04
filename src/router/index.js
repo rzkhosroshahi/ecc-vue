@@ -1,7 +1,7 @@
 import VueRouter from 'vue-router';
-import Servers from '../components/Servers';
-import Stats from '../components/Stats';
-import Root from '../components/Root';
+import Servers from '../Components/Servers';
+import Stats from '../Components/Stats';
+import Root from '../Components/Root';
 
 export const routes = [
     {
