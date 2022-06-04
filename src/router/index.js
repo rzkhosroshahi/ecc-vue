@@ -1,6 +1,4 @@
 import VueRouter from 'vue-router';
-import Servers from '../Components/Servers';
-import Stats from '../Components/Stats';
 import Root from '../Components/Root';
 
 export const routes = [
@@ -12,12 +10,12 @@ export const routes = [
             {
                 path: 'servers',
                 name: 'ecc-servers',
-                component: Servers,
+                component: () => import('../Components/Servers'),
             },
             {
                 path: 'stats',
                 name: 'ecc-stats',
-                component: Stats,
+                component: () => import('../Components/Stats'),
             },
 
         ]
