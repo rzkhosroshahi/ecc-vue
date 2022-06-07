@@ -15,5 +15,16 @@
 <script>
 export default {
   name: 'App',
+  mounted() {
+    addEventListener('changeRoute', this.handleNavigateFromHost);
+  },
+  beforeDestroy() {
+    removeEventListener('changeRoute', this.handleNavigateFromHost);
+  },
+  methods: {
+    handleNavigateFromHost(to) {
+      this.$router.push(to.detail.path);
+    },
+  }
 };
 </script>

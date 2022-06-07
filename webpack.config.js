@@ -45,8 +45,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        './EccApp': './src/App.vue',
-        './routes': './src/router/index.js'
+        './EccApp': './src/expose.js',
       },
       shared: {
         ...deps,
